@@ -506,7 +506,72 @@ ruby:hover, ruby.is-active {
     color: #d7bde2 !important;             
 }
 
-/* 📱 响应式适配移动端手机 */
+/* ==========================================================================
+   📝 课后思考与 AI 智能练习 - Dark Mode 颜色优化
+   ========================================================================== */
+
+/* 🌙 暗黑模式下，课后思考标题和分数变亮 */
+[data-theme="dark"] .lesson-title,
+[data-theme="dark"] .ai-section-title {
+    color: #f1f5f9 !important;
+}
+
+/* 🌙 暗黑模式下，满分答案标签变亮 */
+[data-theme="dark"] .model-answer-label,
+[data-theme="dark"] .ai-feedback-label {
+    color: #34d399 !important;
+}
+
+/* 🌙 暗黑模式下，AI批改结果区域背景优化 */
+[data-theme="dark"] .ai-feedback-box {
+    background: #1a2332 !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+/* 🌙 暗黑模式下，满分答案内容颜色优化 */
+[data-theme="dark"] .model-answer-content {
+    color: #a7f3d0 !important;
+}
+
+/* 🌙 暗黑模式下，思考题的输入框 */
+[data-theme="dark"] .answer-input {
+    background: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #475569 !important;
+}
+
+[data-theme="dark"] .answer-input:focus {
+    border-color: #60a5fa !important;
+}
+
+/* 🌙 暗黑模式下，思考题的卡片容器 */
+[data-theme="dark"] .qa-card,
+[data-theme="dark"] .summary-card {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+/* 🌙 暗黑模式下，分数标签 */
+[data-theme="dark"] .score-badge {
+    color: #fbbf24 !important;
+}
+
+/* 🌙 暗黑模式下，收起/展开按钮 */
+[data-theme="dark"] .toggle-answer-btn {
+    background: #2d3a4f !important;
+    color: #94a3b8 !important;
+    border-color: #475569 !important;
+}
+
+[data-theme="dark"] .toggle-answer-btn:hover {
+    background: #3d4a6f !important;
+    color: #e2e8f0 !important;
+}
+
+/* ==========================================================================
+   📱 响应式适配移动端手机
+   ========================================================================== */
 @media (max-width: 600px) {
     body { padding: 15px 10px; }
     .article-card { padding: 30px 20px; }
